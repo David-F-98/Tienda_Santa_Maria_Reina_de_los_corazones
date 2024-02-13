@@ -1,5 +1,4 @@
-import { NavLink, Route, Routes } from 'react-router-dom';
-// import Error404 from './Components/Error404';
+import { NavLink} from 'react-router-dom';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -7,18 +6,18 @@ const Header = () => {
    return (
     <Contenedor>
         <ContenedorLogo>
-            <Logo src="../../public/Maestros del Amor.jpg" alt="" />
+            <Logo src="../../public/Maestros del Amor.jpg" alt="logo" />
             <Titulo>Maestros del amor</Titulo>
         </ContenedorLogo>
         <div>
             <Menu>
-                <NavLink to={'/'}>Inicio</NavLink>
-                <NavLink to={'/servicios'}>Servicios</NavLink>
-                <NavLink to={'/contacto'}>Contáctame</NavLink>
+                <a href='#' >Inicio</a>
+                <a href='#' >Servicios</a>
+                <a href='#' >Contáctame</a>
             </Menu>
         </div>
     </Contenedor>
-     );
+    );
 }
  
 const Contenedor = styled.div`
@@ -28,7 +27,7 @@ const Contenedor = styled.div`
     gap: 1.25rem;
     grid-template-columns: 2fr 1fr;
     background: #fff;
-    margin: 2.5rem 0;
+    margin: 2.5rem 2.5rem;
     border-radius: .625rem;
     box-shadow: 0px 0px 5px rgba(129, 129, 129, 0.1);
     align-items: center;
@@ -65,6 +64,7 @@ const Menu = styled.nav`
  
     a:hover {
         background: #ea2e2e;
+        background: linear-gradient(90deg, #ea2e2e 0%, #c31212 100%);
         text-decoration: none;
         border-radius: .5rem;
         color: #ffffff;

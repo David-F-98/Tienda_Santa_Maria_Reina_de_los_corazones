@@ -8,15 +8,22 @@
 }
  
 body {
-	background: #EEF3F5;
+	background: #fff1f1;
 	font-family: 'Open Sans', sans-serif;
 }
  
 #root {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 }
  
+main {
+	max-width: 62.5rem;
+	margin: 3.125rem auto;
+	overflow: hidden;
+}
+
 a {
 	text-decoration: none;
 }
