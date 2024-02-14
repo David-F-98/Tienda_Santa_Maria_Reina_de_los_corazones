@@ -58,19 +58,13 @@ const Anuncios = () => {
       <ContenedorPrincipal>
         <ContenedorSlideShow ref={slideshow}>
             <Slide>
-                <a href="#">
                     <img src={img1} alt="" />
-                </a>
             </Slide>
             <Slide>
-                <a href="#">
                     <img src={img2} alt="" />
-                </a>
             </Slide>
             <Slide>
-                <a href="#">
                     <img src={img3} alt="" />
-                </a>
             </Slide>
         </ContenedorSlideShow>
         <Controles>

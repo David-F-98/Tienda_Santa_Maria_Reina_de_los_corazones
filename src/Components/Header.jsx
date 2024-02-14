@@ -2,6 +2,7 @@ import { NavLink} from 'react-router-dom';
 import React from 'react';
 import styled from 'styled-components';
 
+
 const Header = () => {
    return (
     <Contenedor>
@@ -14,8 +15,8 @@ const Header = () => {
         </ContenedorLogo>
         <div>
             <Menu>
-                <a href='#' >Servicios</a>
                 <a href='#' >Sobre Nosotros</a>
+                <a href='#' >Servicios</a>
                 <a href='#' >Contáctame</a>
             </Menu>
         </div>
@@ -25,7 +26,6 @@ const Header = () => {
  
 const Contenedor = styled.div`
     padding: 2.5rem;
-    width: 95%;
     display: grid;
     gap: 1.25rem;
     grid-template-columns: 2fr 1fr;
