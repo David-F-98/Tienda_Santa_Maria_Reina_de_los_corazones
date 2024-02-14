@@ -1,5 +1,5 @@
 import React from 'react';
-import { useRef } from 'react';
+import { useRef ,useEffect} from 'react';
 import img1 from './../img/1.jpg';
 import img2 from './../img/2.jpg';
 import img3 from './../img/3.jpg';
@@ -12,7 +12,7 @@ const Anuncios = () => {
         if(slideshow.current.children.length > 0){
             
             const primerElemento = slideshow.current.children[0];
-            slideshow.current.style.transition = `500ms ease-out all`;
+            slideshow.current.style.transition = `800ms ease-out all`;
 
             const tamanoSlide = slideshow.current.children[0].offsetWidth;
 
@@ -42,11 +42,17 @@ const Anuncios = () => {
             slideshow.current.style.transform = `translateX(-${tamanoSlide}px)`;
 
             setTimeout(()=>{
-                slideshow.current.style.transition = `500ms ease-out all`;
+                slideshow.current.style.transition = `800ms ease-out all`;
                 slideshow.current.style.transform = `translateX(0)`;
             },30)
         }
     };
+
+    useEffect(()=>{
+        setInterval(()=>{
+            siguiente();
+        },4000);
+    },[])
 
     return ( 
       <ContenedorPrincipal>
