@@ -14,8 +14,8 @@ const Header = () => {
         </ContenedorLogo>
         <div>
             <Menu>
-                <a href='#' >Inicio</a>
                 <a href='#' >Servicios</a>
+                <a href='#' >Sobre Nosotros</a>
                 <a href='#' >Contáctame</a>
             </Menu>
         </div>

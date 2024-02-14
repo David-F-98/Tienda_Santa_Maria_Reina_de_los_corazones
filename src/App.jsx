@@ -2,7 +2,7 @@ import { useState } from 'react'
 import React from 'react';
 import Header from './Components/Header';
 import Anuncios from './Components/Anuncios';
-import Inicio from './Components/Inicio';
+import SobreNosotros from './Components/SobreNosotros';
 import Servicios from './Components/Servicios';
 import Contactame from './Components/Contactame';
 
@@ -13,7 +13,7 @@ function App() {
       <Header/>
       <main>
         <Anuncios/>
-        <Inicio/>
+        <SobreNosotros/>
         <Servicios/>
         <Contactame/>
       </main>
