@@ -7,7 +7,10 @@ const Header = () => {
     <Contenedor>
         <ContenedorLogo>
             <Logo src="../../public/Maestros del Amor.jpg" alt="logo" />
-            <Titulo>Maestros del amor</Titulo>
+            <ContenedorTitulo>
+                <Titulo>Maestros del amor</Titulo>
+                <Subtitulo>Santa Marta de los Corazones</Subtitulo>
+            </ContenedorTitulo>
         </ContenedorLogo>
         <div>
             <Menu>
@@ -38,16 +41,30 @@ const ContenedorLogo = styled.div`
     align-items: center;
 `;
 
+const ContenedorTitulo = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+
 const Logo = styled.img`
     height: 4.375rem;
     width: 4.375rem;
 `;
 
-const Titulo = styled.span`
+const Titulo = styled.h1`
     font-family: "Pacifico",cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 1.875rem;
+    padding-left: 1.25rem;
+`;
+
+const Subtitulo = styled.h3`
+    font-family: "Pacifico",cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .75rem;
     padding-left: 1.25rem;
 `;
 

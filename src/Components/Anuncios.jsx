@@ -12,7 +12,7 @@ const Anuncios = () => {
         if(slideshow.current.children.length > 0){
             
             const primerElemento = slideshow.current.children[0];
-            slideshow.current.style.transition = `800ms ease-out all`;
+            slideshow.current.style.transition = `500ms ease-out all`;
 
             const tamanoSlide = slideshow.current.children[0].offsetWidth;
 
@@ -24,6 +24,7 @@ const Anuncios = () => {
                 slideshow.current.style.transform = `translateX(0)`;
 
                 slideshow.current.appendChild(primerElemento);
+                slideshow.current.removeEventListener('transitionend', transicion);
             }
 
             slideshow.current.addEventListener('transitionend',transicion);
@@ -31,7 +32,20 @@ const Anuncios = () => {
     };
     
     const anterior = ()=>{
-        console.log(slideshow.current);
+        if(slideshow.current.children.length > 0){
+            const index = slideshow.current.children.length - 1 ;
+            const ultimoElemento = slideshow.current.children[index];
+            slideshow.current.insertBefore(ultimoElemento, slideshow.current.firstChild);
+            slideshow.current.style.transition = `none`;
+
+            const tamanoSlide = slideshow.current.children[0].offsetWidth;
+            slideshow.current.style.transform = `translateX(-${tamanoSlide}px)`;
+
+            setTimeout(()=>{
+                slideshow.current.style.transition = `500ms ease-out all`;
+                slideshow.current.style.transform = `translateX(0)`;
+            },30)
+        }
     };
 
     return ( 
