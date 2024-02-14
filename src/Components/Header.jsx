@@ -17,6 +17,7 @@ const Header = () => {
             <Menu>
                 <a href='#' >Sobre Nosotros</a>
                 <a href='#' >Servicios</a>
+                <a href='#' >Encuentranos</a>
                 <a href='#' >Contáctame</a>
             </Menu>
         </div>
@@ -28,7 +29,7 @@ const Contenedor = styled.div`
     padding: 2.5rem;
     display: grid;
     gap: 1.25rem;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     background: #fff;
     margin: 2.5rem 2.5rem;
     border-radius: .625rem;
