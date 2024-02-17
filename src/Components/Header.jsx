@@ -15,8 +15,8 @@ const Header = () => {
         </ContenedorLogo>
         <div>
             <Menu>
-                <a href='#' >Sobre Nosotros</a>
                 <a href='#' >Contáctame</a>
+                <a href='#' >Sobre Nosotros</a>
             </Menu>
         </div>
     </Contenedor>
