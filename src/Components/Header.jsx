@@ -7,7 +7,7 @@ const Header = () => {
    return (
     <Contenedor>
         <ContenedorLogo>
-            <Logo src="../../public/Maestros del Amor.png" alt="logo" />
+            <Logo src="../../public/Maestros del Amor.jpg" alt="logo" />
             <ContenedorTitulo>
                 <Titulo>Maestros del amor</Titulo>
                 <Subtitulo>Santa Marta de los Corazones</Subtitulo>
