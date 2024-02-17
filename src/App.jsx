@@ -19,7 +19,7 @@ function App() {
         <Servicios/>
         <Contactame/>
       </main>
-      <Whathsapp href="https://wa.me/573192481784?text=Hola me gustaría tener más información acerca de sus servicios!!" target='_blank'>
+      <Whathsapp href="https://wa.me/573133463378?text=Hola me gustaría tener más información acerca de sus servicios!!" target='_blank'>
         <FontAwesomeIcon icon={faWhatsapp} style={{color: "#02ac3a",}} />
       </Whathsapp>
     </>

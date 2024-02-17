@@ -7,7 +7,7 @@ const Header = () => {
    return (
     <Contenedor>
         <ContenedorLogo>
-            <Logo src="../../public/Maestros del Amor.jpg" alt="logo" />
+            <Logo src="../../public/Maestros del Amor.png" alt="logo" />
             <ContenedorTitulo>
                 <Titulo>Maestros del amor</Titulo>
                 <Subtitulo>Santa Marta de los Corazones</Subtitulo>
@@ -16,8 +16,6 @@ const Header = () => {
         <div>
             <Menu>
                 <a href='#' >Sobre Nosotros</a>
-                <a href='#' >Servicios</a>
-                <a href='#' >Encuentranos</a>
                 <a href='#' >Contáctame</a>
             </Menu>
         </div>
@@ -49,8 +47,8 @@ const ContenedorTitulo = styled.div`
 `;
 
 const Logo = styled.img`
-    height: 4.375rem;
-    width: 4.375rem;
+    height: 8.375rem;
+    width: 6.375rem;
 `;
 
 const Titulo = styled.h1`

@@ -1,8 +1,9 @@
 import React from 'react';
 import { useRef ,useEffect} from 'react';
-import img1 from './../img/1.jpg';
-import img2 from './../img/2.jpg';
-import img3 from './../img/3.jpg';
+import img1 from './../img/1.png';
+import img2 from './../img/2.png';
+import img3 from './../img/3.png';
+import img4 from './../img/4.png';
 import styled from 'styled-components';
 
 const Anuncios = () => {
@@ -66,6 +67,9 @@ const Anuncios = () => {
             <Slide>
                     <img src={img3} alt="" />
             </Slide>
+            <Slide>
+                    <img src={img4} alt="" />
+            </Slide>
         </ContenedorSlideShow>
         <Controles>
             <Boton onClick={anterior}>
@@ -94,7 +98,7 @@ const Slide = styled.div`
     overflow: hidden;
     transition: all.3s ease all;
     z-index: 10;
-    max-height: 31.25rem;
+    max-height: 43.25rem;
     position: relative;
 
     img {
